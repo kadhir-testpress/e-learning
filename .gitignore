@@ -1,52 +1,22 @@
-# Byte-compiled / optimized / DLL files
+# Ignore Python cache files
 __pycache__/
+
+# Exclude all pycache except for migrations
+**/__pycache__/*
+!**/migrations/__pycache__/
+
+# Ignore compiled Python files
 *.pyc
 *.pyo
 *.pyd
 
-# Database
-db.sqlite3
+# Ignore database files
+*.sqlite3
 
-# Static files
-staticfiles/
+# Ignore development settings file
+settings_local.py
 
-# Media files
-media/
-
-# Environment variables
-.env
-
-# Byte-compiled Python files
-*.pyc
-*.pyo
-__pycache__/
-
-# Local development settings
-local_settings.py
-
-# Log files
-*.log
-
-# macOS
-.DS_Store
-
-# Compiled Python bytecode
-*.pyc
-
-# Virtual environment
+# Ignore virtual environment
 venv/
-env/
 
-# IDE-specific files
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-*.pycharm
-*.pyc
-
-# Ignore all .pyc files in the project
-**/__pycache__/*.pyc
-
-# Ignore all .pyc files in all directories under the project
-**/**/*.pyc
+.env
